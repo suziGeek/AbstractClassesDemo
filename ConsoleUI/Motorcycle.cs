@@ -6,16 +6,16 @@ namespace ConsoleUI
 {
     public class Motorcycle: Vehicle
     {
-        public bool HasSideCart { get; set; }
+        public bool HasSideCart { get; set; } = false;
 
         public override void DriveAbstract(Vehicle vehicle)
         {
             Console.WriteLine("Im driving the motorcyle");
         }
 
-        public override void DriveVirtual(Vehicle vehicle)
+        public override void DriveVirtual()
         {
-            base.DriveVirtual(vehicle);
+            Console.WriteLine("This is virtual Drive for Motorcycle");
         }
 
     }

@@ -6,11 +6,11 @@ namespace ConsoleUI
 {
     public class Car : Vehicle
     {
-        public bool HasTrunk {get; set;}
+        public bool HasTrunk { get; set; } = true;
 
        
 
-        public override void DriveAbstract(Vehicle vehicle)
+        public override void DriveAbstract()
         {
             Console.WriteLine("Im driveabstract");
         }

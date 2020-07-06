@@ -21,8 +21,8 @@ public abstract class Vehicle
 
         public string Model { get; set; } = "Default Model";
 
-        public abstract void DriveAbstract(Vehicle vehicle);
-        public virtual void DriveVirtual(Vehicle vehicle) 
+        public abstract void DriveAbstract(); //STUBBED OUT METHOD
+        public virtual void DriveVirtual() 
         {Console.WriteLine($"Im driving my car {vehicle.Make}"); } 
     }
 }
