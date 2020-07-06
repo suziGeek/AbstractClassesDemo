@@ -53,9 +53,21 @@ namespace ConsoleUI
              * Using a foreach loop iterate over each of the properties
              */
 
+            vehicles.Add(Sedan);
+            vehicles.Add(Coupe);
+            vehicles.Add(myMotorcycle);
+            vehicles.Add(myCar);
+
+            foreach (var veh in vehicles)
+            {
+                Console.WriteLine($"Make:{veh.Make} Model:{veh.Model} Year: {veh.Year}");
+            }
+
             // Call each of the drive methods for one car and one motorcycle
 
-            #endregion            
+            #endregion   
+            myCar.DriveVirtual();
+            myMotorcycle.DriveAbstract();
             Console.ReadLine();
         }
     }

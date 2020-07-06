@@ -8,7 +8,7 @@ namespace ConsoleUI
     {
         public bool HasSideCart { get; set; } = false;
 
-        public override void DriveAbstract(Vehicle vehicle)
+        public override void DriveAbstract()
         {
             Console.WriteLine("Im driving the motorcyle");
         }

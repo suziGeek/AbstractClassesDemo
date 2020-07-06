@@ -23,6 +23,6 @@ public abstract class Vehicle
 
         public abstract void DriveAbstract(); //STUBBED OUT METHOD
         public virtual void DriveVirtual() 
-        {Console.WriteLine($"Im driving my car {vehicle.Make}"); } 
+        {Console.WriteLine($"Im driving my car"); } 
     }
 }
